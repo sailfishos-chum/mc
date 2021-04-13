@@ -2,7 +2,7 @@
 
 
 ### Installation
-Hopefully soon at openrepos.
+Get it at [OpenRepos](https://openrepos.net/content/polleke/midnight-commander)
 
 
 ### Build
