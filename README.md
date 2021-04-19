@@ -32,7 +32,10 @@ Also install the tooling and the target(s) that you need.
   $ rpmbuild --define "_topdir `pwd`" --define "_sourcedir `pwd`" -bb *.spec
 ```
 
-
+Setting target to i486 instead of i586 for the Jolla Tablet:
+```shell
+  $ rpmbuild --define "_topdir `pwd`" --define "_sourcedir `pwd`" --define "_target_cpu i486" -bb *.spec
+```
 
 ## Installing extra packages
 # enter ScratchBox2 root shell in sdk-install mode for installing packages that are needed to build:
