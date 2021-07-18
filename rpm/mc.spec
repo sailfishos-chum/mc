@@ -49,6 +49,11 @@ Midnight Commander s3+ and UC1541 EXTFS backend scripts.
 
 %setup -q -n %{name}-%{version}/mc
 
+%patch1 -p1
+%patch3 -p1
+%patch4 -p1
+%patch5 -p1
+
 %autosetup -p1
 
 %build
