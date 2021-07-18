@@ -76,6 +76,9 @@ Midnight Commander s3+ and UC1541 EXTFS backend scripts.
 %install
 %make_install
 
+# required for older SFOS versions
+mkdir -p %{buildroot}%{_sysconfdir}/profile.d
+
 %__install contrib/mc.{sh,csh} -Dt %{buildroot}%{_sysconfdir}/profile.d
 
 %find_lang %{name} --with-man
