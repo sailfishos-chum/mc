@@ -46,6 +46,9 @@ Requires:	python3-boto
 Midnight Commander s3+ and UC1541 EXTFS backend scripts.
 
 %prep
+
+%setup -q -n %{name}-%{version}/mc
+
 %autosetup -p1
 
 %build
