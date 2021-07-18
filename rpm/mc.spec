@@ -7,7 +7,7 @@ Version:	4.8.26
 Release:	4%{?dist}
 License:	GPLv3+
 URL:		http://www.midnight-commander.org/
-Source0:	https://github.com/MidnightCommander/mc/archive/%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 Patch1:		%{name}-spec.syntax.patch
 Patch3:		%{name}-python3.patch
 Patch4:		%{name}-default_setup.patch
