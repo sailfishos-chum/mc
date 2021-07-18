@@ -1,5 +1,10 @@
 # Midnight commander RPM for Sailfish OS
 
+Imported from https://gitlab.com/toomanybicycles/mc-for-sailfish,
+adjusted for packaging using submodule and made available at OBS.
+
+Original README below.
+
 
 ### Installation
 Get it at [OpenRepos](https://openrepos.net/content/polleke/midnight-commander)
@@ -7,27 +12,27 @@ Get it at [OpenRepos](https://openrepos.net/content/polleke/midnight-commander)
 
 ### Build
 
-# install the [Platform SDK](https://sailfishos.org/wiki/Platform_Development).
+* install the [Platform SDK](https://sailfishos.org/wiki/Platform_Development).
 Also install the tooling and the target(s) that you need.
 
-# open the chroot of the SDK:
+* open the chroot of the SDK:
 ```shell
   $ /srv/mer/sdks/sfossdk/mer-sdk-chroot
 ```
 
-# enter ScratchBox2 in the target of your preference:
+* enter ScratchBox2 in the target of your preference:
 ```shell
   $ sb2 -t SailfishOS-aarch64
   $ sb2 -t SailfishOS-armv7hl
   $ sb2 -t SailfishOS-i486
 ```
 
-# cd to the directory of this repo:
+* cd to the directory of this repo:
 ```shell
   $ cd RPMS/slang/
 ```
 
-# enter Scratchbox2 and run rpmbuild for building the "dumb" way:
+* enter Scratchbox2 and run rpmbuild for building the "dumb" way:
 ```shell
   $ rpmbuild --define "_topdir `pwd`" --define "_sourcedir `pwd`" -bb *.spec
 ```
@@ -37,8 +42,9 @@ Setting target to i486 instead of i586 for the Jolla Tablet:
   $ rpmbuild --define "_topdir `pwd`" --define "_sourcedir `pwd`" --define "_target_cpu i486" -bb *.spec
 ```
 
-## Installing extra packages
-# enter ScratchBox2 root shell in sdk-install mode for installing packages that are needed to build:
+### Installing extra packages
+
+* enter ScratchBox2 root shell in sdk-install mode for installing packages that are needed to build:
 ```shell
   $ sb2 -t SailfishOS-aarch64 -m sdk-install -R
   $ sb2 -t SailfishOS-armv7hl -m sdk-install -R
