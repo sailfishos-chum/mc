@@ -54,8 +54,6 @@ Midnight Commander s3+ and UC1541 EXTFS backend scripts.
 %patch4 -p1
 %patch5 -p1
 
-%autosetup -p1
-
 %build
 ./autogen.sh
 %configure \
