@@ -1,5 +1,5 @@
---- mc-4.8.23/misc/syntax/spec.syntax~	2019-06-16 18:49:31.000000000 +0100
-+++ mc-4.8.23/misc/syntax/spec.syntax	2019-04-18 06:02:53.000000000 +0100
+--- a/misc/syntax/spec.syntax	2019-06-16 18:49:31.000000000 +0100
++++ b/misc/syntax/spec.syntax	2019-04-18 06:02:53.000000000 +0100
 @@ -5,25 +5,24 @@
      keyword whole Build\{Aa\}rch: green
      keyword whole Build\{Cc\}onflicts: green
