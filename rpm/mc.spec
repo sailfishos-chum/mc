@@ -45,6 +45,14 @@ Requires:	python3-boto
 %description python
 Midnight Commander s3+ and UC1541 EXTFS backend scripts.
 
+PackageName: Midnight Commander
+Type: console-application
+Custom:
+  Repo: https://github.com/MidnightCommander/mc
+Icon: https://midnight-commander.org/chrome/site/MidnightCommander.png
+Screenshots:
+  - https://upload.wikimedia.org/wikipedia/commons/b/b8/Midnight_Commander_%282005%29_en.png
+
 %prep
 
 %setup -q -n %{name}-%{version}/mc
