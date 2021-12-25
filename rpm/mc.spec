@@ -36,6 +36,14 @@ many more features. It is a text mode application, but it also includes
 mouse support. Midnight Commander's best features are its ability to FTP,
 view tar and zip files, and to poke into RPMs for specific files.
 
+PackageName: Midnight Commander
+Type: console-application
+Custom:
+  Repo: https://github.com/MidnightCommander/mc
+Icon: https://midnight-commander.org/chrome/site/MidnightCommander.png
+Screenshots:
+  - https://upload.wikimedia.org/wikipedia/commons/b/b8/Midnight_Commander_%282005%29_en.png
+
 %package python
 Summary:	Midnight Commander s3+ and UC1541 EXTFS backend scripts
 BuildArch:	noarch
@@ -44,14 +52,6 @@ Requires:	python3-boto
 
 %description python
 Midnight Commander s3+ and UC1541 EXTFS backend scripts.
-
-PackageName: Midnight Commander
-Type: console-application
-Custom:
-  Repo: https://github.com/MidnightCommander/mc
-Icon: https://midnight-commander.org/chrome/site/MidnightCommander.png
-Screenshots:
-  - https://upload.wikimedia.org/wikipedia/commons/b/b8/Midnight_Commander_%282005%29_en.png
 
 %prep
 
