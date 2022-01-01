@@ -31,7 +31,7 @@ BuildRequires:	pkgconfig
 Suggests:	mc-python
 
 %description
-Midnight Commander is a visual shell much like a file manager, only with
+Midnight Commander (mc) is a visual shell much like a file manager, only with
 many more features. It is a text mode application, but it also includes
 mouse support. Midnight Commander's best features are its ability to FTP,
 view tar and zip files, and to poke into RPMs for specific files.
@@ -41,6 +41,8 @@ Type: console-application
 Custom:
   Repo: https://github.com/MidnightCommander/mc
 Icon: https://midnight-commander.org/chrome/site/MidnightCommander.png
+Categories:
+  - Utility
 Screenshots:
   - https://upload.wikimedia.org/wikipedia/commons/b/b8/Midnight_Commander_%282005%29_en.png
 
@@ -51,7 +53,9 @@ Requires:	%{name} = %{epoch}:%{version}-%{release}
 Requires:	python3-boto
 
 %description python
-Midnight Commander s3+ and UC1541 EXTFS backend scripts.
+Midnight Commander (mc) s3+ and UC1541 EXTFS backend scripts.
+
+PackageName: Midnight Commander Python
 
 %prep
 
