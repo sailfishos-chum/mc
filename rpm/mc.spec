@@ -3,7 +3,7 @@
 Summary:	User-friendly text console file manager and visual shell
 Name:		mc
 Epoch:		1
-Version:	4.8.27
+Version:	4.8.29
 Release:	1%{?dist}
 License:	GPLv3+
 URL:		http://www.midnight-commander.org/
